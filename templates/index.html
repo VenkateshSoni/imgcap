@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Captioning App</title>
+</head>
+<body>
+    <h1>Image Captioning App</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="image">Upload Image:</label>
+        <input type="file" name="image" accept="image/*" required>
+        <br>
+        <label for="prompt">Caption Prompt:</label>
+        <input type="text" name="prompt" required>
+        <br>
+        <input type="submit" value="Generate Caption">
+    </form>
+</body>
+</html>
