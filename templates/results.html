@@ -31,15 +31,28 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+        /* Add styling for the caption box */
+        .caption-box {
+            max-width: 600px; /* Set your desired maximum width */
+            margin: 0 auto; /* Center the box horizontally */
+            padding: 20px;
+            background-color: #fff; /* Optional: Add a background color */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
     <div style="text-align: center;">
         <h2>Image:</h2>
-        <!-- Use the full path to the image -->
         <img src="{{ url_for('static', filename='result.jpg') }}" alt="Result Image">
-        <h2>Generated Caption:</h2>
-        <p>{{ caption }}</p>
+        
+        <!-- Add a div for the caption box -->
+        <div class="caption-box">
+            <h2>Generated Caption:</h2>
+            <p>{{ caption }}</p>
+        </div>
     </div>
 </body>
 </html>
