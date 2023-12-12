@@ -36,8 +36,8 @@
 <body>
     <div style="text-align: center;">
         <h2>Image:</h2>
-        <!-- Use the relative path directly -->
-        <img src="/content/LLaVA/result.jpg" alt="Result Image">
+        <!-- Use the full path to the image -->
+        <img src="{{ url_for('static', filename='result.jpg') }}" alt="Result Image">
         <h2>Generated Caption:</h2>
         <p>{{ caption }}</p>
     </div>
