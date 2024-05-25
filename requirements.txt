@@ -86,5 +86,5 @@ urllib3==2.1.0
 uvicorn==0.24.0.post1
 watchfiles==0.21.0
 websockets==11.0.3
-Werkzeug==3.0.1
+Werkzeug==3.0.3
 zipp==3.17.0
